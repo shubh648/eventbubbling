@@ -22,6 +22,7 @@ We can, therefore, fix our current problem by changing the second handler functi
 
 innerDiv = (e) =>{
     e.stopPropagation();
+    
     return (this.state.innerDiv==="innerClicked")?this.setState({ innerDiv:""})
     :this.setState({ innerDiv:"innerClicked"})
 }

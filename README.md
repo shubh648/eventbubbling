@@ -10,7 +10,7 @@ But there's a problem — currently, when you click the "Inner-Div" it change th
 
 > Then it moves on to the next immediate ancestor element and does the same thing, then the next one, and so on until it reaches the <html> element.
 
-## In tis example:
+## In this example:
 >It finds the innerDiv.onclick... handler and runs it, so the InnerDiv's color first change.
 
 >It then finds the outerDiv.onclick... handler and runs it, so the InnerDiv's color is change as well.

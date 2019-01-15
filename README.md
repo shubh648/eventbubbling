@@ -26,3 +26,11 @@ innerDiv = (e) =>{
     return (this.state.innerDiv==="innerClicked")?this.setState({ innerDiv:""})
     :this.setState({ innerDiv:"innerClicked"})
 }
+
+
+## Instructions for running project
+
+git clone https://github.com/shubh648/eventbubbling.git
+cd eventbubbling
+npm i
+npm start

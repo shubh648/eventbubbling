@@ -19,18 +19,19 @@ But there's a problem — currently, when you click the "Inner-Div" it change th
 This is annoying behavior, but there is a way to fix it! The standard event object has a function available on it called stopPropagation(), which when invoked on a handler's event object makes it so that handler is run, but the event doesn't bubble any further up the chain, so no more handlers will be run.
 
 We can, therefore, fix our current problem by changing the second handler function in the previous code block to this:
-
+```
 innerDiv = (e) =>{
     e.stopPropagation();
     
     return (this.state.innerDiv==="innerClicked")?this.setState({ innerDiv:""})
     :this.setState({ innerDiv:"innerClicked"})
 }
-
+```
 
 ## Instructions for running project
-
+```
 git clone https://github.com/shubh648/eventbubbling.git
 cd eventbubbling
 npm i
 npm start
+```
